@@ -1,0 +1,11 @@
+<h1>City of Chicago Debarred Firms and Individuals</h1>
+
+<% @debarrments.each do |debarred| %>
+<div class="section">
+<h2> Individual/Firm: <%= debarred["entity_individual"] %> </h2>
+<h3> Cause of Debarrment: <%= debarred["reason"] %> </h3>
+<h3> Date: <%= debarred["debarment_date"] %> </h3>
+<h3> Length of Debarrment: <%= debarred["length_of_debarment"] %></h3>
+<h3> City: <%= debarred["city"] %></h3>
+</div>
+<% end %>
